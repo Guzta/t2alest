@@ -52,7 +52,10 @@ public class Pilha {
 	}
 
 	public void clear() {
-
+		Node aux = head;
+		for (int i = 0; i < count; i++)
+			head.next = aux;
+			head = null;
+			count --;
 	}
-
 }
